@@ -170,6 +170,11 @@ app.post("/api/generate", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`AI Image Studio backend running on http://localhost:${PORT}`);
-});
+// Local / Render: start a server. Vercel: just export the app (serverless).
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`AI Image Studio backend running on http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;
