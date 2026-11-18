@@ -1,0 +1,52 @@
+name: ai_image_studio
+description: "AI Text-to-Image Generator — Flutter + AI Capstone Project"
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # State management
+  provider: ^6.1.2
+
+  # Networking
+  http: ^1.2.1
+
+  # Local persistence (prompt/generation history)
+  shared_preferences: ^2.2.3
+
+  # Save/share generated images
+  path_provider: ^2.1.3
+  share_plus: ^13.3.0
+
+  # Utilities
+  uuid: ^4.4.0
+  intl: ^0.20.2
+
+  # Nice-to-have UX polish
+  google_fonts: ^6.2.1
+  shimmer: ^3.0.0
+
+  # Voice input (speak your prompt, in your chosen language)
+  speech_to_text: ^7.0.0
+  permission_handler: ^11.3.1
+
+  # Convert generated PNG -> JPG for saving
+  image: ^4.2.0
+
+  # Multi-language UI
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
